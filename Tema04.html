@@ -1,0 +1,135 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Min Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="16.png">
+    <link rel="manifest" href="myIcons/site.webmanifest">
+    <link rel="mask-icon" href="myIcons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="16.png">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="bgimg">
+
+        <div class="container">
+            <nav>
+                <a href="index.html">Forside</a>
+                <a href="OmMig.html">Om Mig</a>
+                <a href="Tema01.html">Tema 01 - Grundlæggede webdesign</a>
+                <a href="Tema02.html">Tema 02 - Grundlæggende indhold</a>
+                <a href="Tema03.html">Tema 03 - Grundlæggende animation</a>
+                <a href="Tema04.html" class="active">Tema 04 - Grundlæggende UX</a>
+
+            </nav>
+        </div>
+    </div>
+</header>
+<h1>Grundlæggende UX</h1>
+    <div id="tema04_container">
+    <div id="UX">
+
+
+        <a href="https://xd.adobe.com/view/1f967e06-c5af-406e-575d-31e567423214-69a7/screen/da6f2063-9299-49e9-9ef7-4198023ba6cf/Klik-play">Link til 04.02.01 prototypen</a>
+
+        <p>Målet var at lave en ny mobilløsning til fronter. Vi blev bedt om at bruge fronters eksisterende farver og forme. Alle lavede forskellige sketch løsninger og man kunne derefter vælge den man synetes var bedst. Jeg tog udgangspunkt i en løsning der fokuserer på at have en video/streaming feature indbygget i fronter. </p>
+
+        <a href="04.03.01%20Web%20prototype_JulieLevinPetersen.pdf">Link til 04.03.01</a>
+
+        <p>Sitet er mobileonly og tager udgangspunkt i iPhoneX størrelsen. Jeg stod for at lave en kaldenderside, samt tilhørende moduloversigt og afleveringsside. Vi havde kun en dag til at kode, så vi havde ikke tid til at gøre alt responsivt, men ville have gjort det hvis der var mere tid. Vi havde lidt problemer med at sætte tingene sammen til sidst, da vi havde nogle overlappende klasser m.m. Det lykkedes dog nogenlunde.
+        </p>
+
+        <a href="https://xd.adobe.com/view/09742362-170c-4d4b-4bbf-8585a30ab06c-7f45/">Link til KeAFFE v2 prototypen</a>
+
+        <p>I den sidste uge af UX temaet skulle vi lave en valgfri protoype til KEA studerende. I denne uge galdt det om at buge, alt hvad vi har lært om projektstyring til at struktuere vores arbejde. Vi gik i gennem alle designfaserne dvs. Map - Sketch - Decide - Prototype - Test. </p>
+
+        </div>
+
+
+    </div>
+      <h1>Slideshow</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="2019-01-07%20(1).png" alt="blah" style="width:100%">
+            <div class="text">Animationstemaet</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="Peace.png" alt="blah" style="width:100%">
+            <div class="text">Eget værk</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="responsiv.png" alt="blah" style="width:100%">
+            <div class="text">Splashbillede/Stilartsite</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="2018-11-16%20(1).png" alt="blah" style="width:100%">
+            <div class="text">Privatsnak spil</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="keaffe.png" alt="blah" style="width:100%">
+            <div class="text">UX KeAFFE app</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="keaffelogo.png" alt="blah" style="width:100%">
+            <div class="text">KeAFFE logoet/designet af mig</div>
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" .dot .active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+
+    </script>
+
+    </body>

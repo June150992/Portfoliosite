@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Min Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="16.png">
+    <link rel="manifest" href="myIcons/site.webmanifest">
+    <link rel="mask-icon" href="myIcons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="bgimg">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="active">Forside</a>
+                <a href="OmMig.html">Om Mig</a>
+                <a href="Tema01.html">Tema 01 - Grundlæggede webdesign</a>
+                <a href="Tema02.html">Tema 02 - Grundlæggende indhold</a>
+                <a href="Tema03.html">Tema 03 - Grundlæggende animation</a>
+                <a href="Tema04.html">Tema 04 - Grundlæggende UX</a>
+
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<h1>Velkommen til min Portfolio!</h1>
+
+    <div class="container_forside">
+
+        <div id="txt_1">
+
+            <p>Velkommen til min portfoliosite! Her har jeg samlet alt mit arbejde fra 1 semester på KEA. I topmenuen kan I navigere til de forskellige temaer, og derved finde links til de relavante opgaver. Jeg har desuden lavet en kort video, med et par ting, jeg har lavet i løbet af semesteret.<br><br>I buden af siden har jeg lavet et lille slideshow, der viser noget af mit arbejde i løbet af semesteret.</p>
+
+        </div>
+
+        <div id="txt_2">
+
+            <h2>Introugen</h2>
+
+            <p>I introugen lavede vi et lille visitkort i Photoshop. Vi lavede i grupper en titelsekvens (start intoen til en serie) som blev uploadet til youtube. En titelsekvens sætter tonen og etablerer stedet/scenen. Vi startede som gruppe med at finde på en idè, dernæst lavede vi storybard og så filmede vi og eksporterede. Det var første gang jeg lærte om hvordan man filmer og redigerer video.<br><br>Vi valgte at tage inspiration fra "GIRLS" introen.</p>
+
+            <a href="https://www.youtube.com/watch?v=EOStdWu1uKM">Link til Titelsekevens</a>
+
+        </div>
+
+        <div class="video">
+
+            <video width="300" controls>
+                <source src="Adobe_Spark_Video.mp4" type="audio/ogg">
+            </video>
+
+        </div>
+    </div>
+
+    <h1>Slideshow</h1>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="2019-01-07%20(1).png" alt="bloodmania" style="width:100%">
+            <div class="text">Animationstemaet</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="Peace.png" alt="peace" style="width:100%">
+            <div class="text">Eget værk</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="responsiv.png" alt="responsiv" style="width:100%">
+            <div class="text">Splashbillede/Stilartsite</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="2018-11-16%20(1).png" alt="blah" style="width:100%">
+            <div class="text">Privatsnak spil</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="keaffe.png" alt="kaffeapp" style="width:100%">
+            <div class="text">UX KeAFFE app</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="keaffelogo.png" alt="kaffelogo" style="width:100%">
+            <div class="text">KeAFFE logoet/designet af mig</div>
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" .dot .active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+
+    </script>
+
+</body>

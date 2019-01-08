@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Min Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="16.png">
+    <link rel="manifest" href="myIcons/site.webmanifest">
+    <link rel="mask-icon" href="myIcons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="16.png">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+</head>
+    <body>
+
+    <header>
+        <div class="bgimg">
+
+            <div class="nav">
+                <nav>
+                    <a href="Forside.html">Forside</a>
+                    <a href="OmMig.html" class="active">Om Mig</a>
+                    <a href="Tema01.html">Tema 01 - Grundlæggede webdesign</a>
+                    <a href="Tema02.html">Tema 02 - Grundlæggende indhold</a>
+                    <a href="Tema03.html">Tema 03 - Grundlæggende animation</a>
+                    <a href="Tema04.html">Tema 04 - Grundlæggende UX</a>
+
+
+                </nav>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+
+
+        <h1>Om Mig</h1>
+
+        <div class="container_2">
+
+            <div id="txt_3">
+                <p>Mit navn er Julie Levin Petersen. Jeg er 26 år gammel og bor i Helsingør med min kæreste. I min fritid elsker jeg at game, tegne, male eller slappe af med en god film. Jeg valgte at søge ind på multimediedesignuddannelsen, da det virkede som en god mulighed, for at forene mine kreative interesser med min store interesse for computere. Jeg føler at jeg har lært rigtig meget på bare et semester, og jeg ser frem til at se hvad mere jeg kan lære på 2 semester.<br><br>Jeg er især interesseret i animation og grafik. Jeg synes at animationstemaet var rigtig sjovt, fordi det er utroligt at se hvordan elementer man selv har tegnet, kan komme til live på skærmen. Det er desuden også rigtig spændende at kode. Jeg er blevet meget positivt overrasket hvor sjovt det er. </p>
+
+            </div>
+
+            <div id="figure_2">
+                <figure><img src="Præsentationskort.png" alt="mig">
+                    <figcaption>Præsentationskort lavet i introugen</figcaption>
+                </figure>
+            </div>
+            <div id="figure_1">
+                <figure>
+
+
+                    <img src="portfolio.jpg" alt="default">
+                    <figcaption>Adobe Photoshop/Adobe Sparks</figcaption>
+
+                </figure>
+            </div>
+
+        </div>
+
+        <h1>Slideshow</h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="2019-01-07%20(1).png" alt="blah" style="width:100%">
+                <div class="text">Animationstemaet</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="Peace.png" alt="blah" style="width:100%">
+                <div class="text">Eget værk</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="responsiv.png" alt="blah" style="width:100%">
+                <div class="text">Splashbillede/Stilartsite</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="2018-11-16%20(1).png" alt="blah" style="width:100%">
+                <div class="text">Privatsnak spil</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="keaffe.png" alt="blah" style="width:100%">
+                <div class="text">UX KeAFFE app</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="keaffelogo.png" alt="blah" style="width:100%">
+                <div class="text">KeAFFE logoet/designet af mig</div>
+            </div>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" .dot .active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 4000);
+            }
+
+        </script>
+    </body>
+
+
